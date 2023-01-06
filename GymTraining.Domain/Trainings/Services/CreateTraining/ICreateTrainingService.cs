@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace GymTraining.Domain.Trainings.Services.CreateTraining
 {
-    public interface ICreateTrainingService
+    public interface ICreateTrainingService : IRequestHandler<CreateTrainingInput, CreateTrainingOutput>
     {
-        public Task<CreateTrainingOutput> Handle(CreateTrainingInput input, CancellationToken cancellationToken);   
+        
     }
 }
