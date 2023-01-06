@@ -13,5 +13,7 @@
 
             Id = id;
         }
+
+        public abstract void Validate();
     }
 }
