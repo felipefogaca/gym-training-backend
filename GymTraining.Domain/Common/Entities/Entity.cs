@@ -1,8 +1,8 @@
 ﻿namespace GymTraining.Domain.Common.Entities
 {
-    public class Entity
+    public abstract class Entity
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; protected set; }
 
         public Entity(Guid id)
         {
