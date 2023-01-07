@@ -10,6 +10,8 @@ namespace GymTraining.Domain.Trainings.Entities
             Description = description;
             StartDate = startDate;
             EndDate = endDate;
+
+            Validate();
         }
 
         public string Name { get; private set; }
@@ -20,21 +22,25 @@ namespace GymTraining.Domain.Trainings.Entities
         public void ChangeName(string name)
         {
             Name = name;
+            Validate();
         }
 
         public void ChangeDescription(string description)
         {
             Description = description;
+            Validate();
         }
 
-        public void ChangeStartDate(DateOnly startDate)
+        public void ChangeStartAndEndDate(DateOnly startDate, DateOnly endDate)
         {
             StartDate = startDate;
+            EndDate = endDate;
+            Validate();
         }
 
-        public void ChangeEndDate(DateOnly endDate)
+        public override void Validate()
         {
-            EndDate = endDate;
+            //validate entity
         }
     }
 }
