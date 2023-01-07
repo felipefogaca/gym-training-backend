@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymTraining.Domain", "GymTraining.Domain\GymTraining.Domain.csproj", "{4F1FEE00-FBCF-4F2D-B417-0DBCA24C0C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymTraining.Domain.Infra.Data.EF", "GymTraining.Domain.Infra.Data.EF\GymTraining.Domain.Infra.Data.EF.csproj", "{C42187EC-DB76-4594-89BC-2C2B281F1985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GymTraining.Domain.Infra.Data.EF", "GymTraining.Domain.Infra.Data.EF\GymTraining.Domain.Infra.Data.EF.csproj", "{C42187EC-DB76-4594-89BC-2C2B281F1985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymTraining.Domain.Api", "GymTraining.Domain.Api\GymTraining.Domain.Api.csproj", "{42537921-3E63-4F8A-883D-472EC37C07FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C42187EC-DB76-4594-89BC-2C2B281F1985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C42187EC-DB76-4594-89BC-2C2B281F1985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C42187EC-DB76-4594-89BC-2C2B281F1985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42537921-3E63-4F8A-883D-472EC37C07FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42537921-3E63-4F8A-883D-472EC37C07FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42537921-3E63-4F8A-883D-472EC37C07FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42537921-3E63-4F8A-883D-472EC37C07FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
