@@ -14,6 +14,7 @@ namespace GymTraining.Domain.Trainings.Services.CreateTraining
         {
             return new CreateTrainingOutput()
             {
+                Id = training.Id,
                 Name = training.Name,
                 Description = training.Description,
                 StartDate = training.StartDate,

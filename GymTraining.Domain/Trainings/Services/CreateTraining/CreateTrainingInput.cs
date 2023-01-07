@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using GymTraining.Domain.Common.Commands;
+using MediatR;
 
 namespace GymTraining.Domain.Trainings.Services.CreateTraining
 {
-    public class CreateTrainingInput : IRequest<CreateTrainingOutput>
+    public class CreateTrainingInput : IRequest<GenericOutput<CreateTrainingOutput>>
     {
         public string Name { get;  set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
