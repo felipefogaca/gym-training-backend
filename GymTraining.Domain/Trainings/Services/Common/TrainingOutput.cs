@@ -1,8 +1,13 @@
 ﻿using GymTraining.Domain.Trainings.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace GymTraining.Domain.Trainings.Services.CreateTraining
+namespace GymTraining.Domain.Trainings.Services.Common
 {
-    public class CreateTrainingOutput
+    public class TrainingOutput
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -10,9 +15,9 @@ namespace GymTraining.Domain.Trainings.Services.CreateTraining
         public DateOnly StartDate { get; set; }
         public DateOnly EndDate { get; set; }
 
-        public static CreateTrainingOutput FromEntity(Training training)
+        public static TrainingOutput FromEntity(Training training)
         {
-            return new CreateTrainingOutput()
+            return new TrainingOutput()
             {
                 Id = training.Id,
                 Name = training.Name,

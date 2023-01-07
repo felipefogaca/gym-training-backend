@@ -1,6 +1,7 @@
 ﻿using GymTraining.Domain.Common.Commands;
 using GymTraining.Domain.Trainings.Entities;
 using GymTraining.Domain.Trainings.Repositories;
+using GymTraining.Domain.Trainings.Services.Common;
 
 namespace GymTraining.Domain.Trainings.Services.CreateTraining
 {
@@ -13,7 +14,7 @@ namespace GymTraining.Domain.Trainings.Services.CreateTraining
             _trainingsRepository = trainingsRepository;
         }
 
-        public async Task<GenericOutput<CreateTrainingOutput>> Handle(CreateTrainingInput input, CancellationToken cancellationToken)
+        public async Task<GenericOutput<TrainingOutput>> Handle(CreateTrainingInput input, CancellationToken cancellationToken)
         {
             var training = new Training(Guid.Empty,
                 name: input.Name,
@@ -24,9 +25,9 @@ namespace GymTraining.Domain.Trainings.Services.CreateTraining
             await _trainingsRepository.Create(training);
 
 
-            var data = CreateTrainingOutput.FromEntity(training);
+            var data = TrainingOutput.FromEntity(training);
 
-            return new GenericOutput<CreateTrainingOutput>(true, "Training saved", data);
+            return new GenericOutput<TrainingOutput>(true, "Training saved", data);
         }
     }
 }
