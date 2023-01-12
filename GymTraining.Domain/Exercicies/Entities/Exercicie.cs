@@ -1,4 +1,4 @@
-﻿using GymTraining.Domain.Common.Entities;
+﻿using GymTraining.Domain.Common.SeedWork;
 
 namespace GymTraining.Domain.Exercicies.Entities
 {
@@ -45,7 +45,7 @@ namespace GymTraining.Domain.Exercicies.Entities
             IsActive = false;
         }
 
-        public override void Validate()
+        public void Validate()
         {
             //  validate entity
         }

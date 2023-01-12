@@ -1,8 +1,8 @@
-﻿using GymTraining.Domain.Common.Entities;
+﻿using GymTraining.Domain.Common.SeedWork;
 
 namespace GymTraining.Domain.Trainings.Entities
 {
-    public class Training : Entity
+    public class Training : AggregateRoot
     {
         public Training(Guid id, string name, string description, DateOnly startDate, DateOnly endDate) : base(id)
         {
@@ -38,7 +38,7 @@ namespace GymTraining.Domain.Trainings.Entities
             Validate();
         }
 
-        public override void Validate()
+        public void Validate()
         {
             //validate entity
         }
