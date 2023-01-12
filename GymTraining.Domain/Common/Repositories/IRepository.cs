@@ -1,4 +1,4 @@
-﻿using GymTraining.Domain.Common.Entities;
+﻿using GymTraining.Domain.Common.SeedWork;
 
 namespace GymTraining.Domain.Common.Repositories
 {

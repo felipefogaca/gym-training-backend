@@ -1,4 +1,4 @@
-﻿namespace GymTraining.Domain.Common.Entities
+﻿namespace GymTraining.Domain.Common.SeedWork
 {
     public abstract class Entity
     {
@@ -6,14 +6,12 @@
 
         public Entity(Guid id)
         {
-            if(id == Guid.Empty)
+            if (id == Guid.Empty)
             {
                 id = Guid.NewGuid();
             }
 
             Id = id;
         }
-
-        public abstract void Validate();
     }
 }
