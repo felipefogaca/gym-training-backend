@@ -5,11 +5,11 @@ using GymTraining.Domain.Exercicies.Services.Common;
 
 namespace GymTraining.Domain.Exercicies.Services.CreateExecicie
 {
-    public class CreateExercicieService : ICreateExercicieService
+    public class CreateExercicie : ICreateExercicie
     {
         private readonly IExerciciesRepository _exerciciesRepository;
 
-        public CreateExercicieService(IExerciciesRepository exerciciesRepository)
+        public CreateExercicie(IExerciciesRepository exerciciesRepository)
         {
             _exerciciesRepository = exerciciesRepository;
         }

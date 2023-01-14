@@ -5,11 +5,11 @@ using GymTraining.Domain.Trainings.Services.Common;
 
 namespace GymTraining.Domain.Trainings.Services.CreateTraining
 {
-    public class CreateTrainingService : ICreateTrainingService
+    public class CreateTraining : ICreateTraining
     {
 
         private readonly ITrainingsRepository _trainingsRepository;
-        public CreateTrainingService(ITrainingsRepository trainingsRepository)
+        public CreateTraining(ITrainingsRepository trainingsRepository)
         {
             _trainingsRepository = trainingsRepository;
         }

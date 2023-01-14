@@ -4,12 +4,12 @@ using GymTraining.Domain.Trainings.Services.Common;
 
 namespace GymTraining.Domain.Trainings.Services.FindTraining
 {
-    public class FindTrainingService : IFindTrainingService
+    public class FindTraining : IFindTraining
     {
 
         private readonly ITrainingsRepository _trainingsRepository;
 
-        public FindTrainingService(ITrainingsRepository trainingsRepository)
+        public FindTraining(ITrainingsRepository trainingsRepository)
         {
             _trainingsRepository = trainingsRepository;
         }

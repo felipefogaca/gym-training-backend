@@ -4,10 +4,10 @@ using GymTraining.Domain.Trainings.Services.Common;
 
 namespace GymTraining.Domain.Trainings.Services.UpdateTraining
 {
-    public class UpdateTrainingService : IUpdateTrainingService
+    public class UpdateTraining : IUpdateTraining
     {
         private readonly ITrainingsRepository _trainingsRepository;
-        public UpdateTrainingService(ITrainingsRepository trainingsRepository)
+        public UpdateTraining(ITrainingsRepository trainingsRepository)
         {
             _trainingsRepository = trainingsRepository;
         }

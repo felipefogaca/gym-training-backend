@@ -4,7 +4,7 @@ using MediatR;
 
 namespace GymTraining.Domain.Trainings.Services.UpdateTraining
 {
-    public interface IUpdateTrainingService : IRequestHandler<UpdateTrainingInput, GenericOutput<TrainingOutput>>
+    public interface IUpdateTraining : IRequestHandler<UpdateTrainingInput, GenericOutput<TrainingOutput>>
     {
     }
 }

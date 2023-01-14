@@ -4,7 +4,7 @@ using MediatR;
 
 namespace GymTraining.Domain.Trainings.Services.FindTraining
 {
-    public interface IFindTrainingService : IRequestHandler<FindTrainingInput, GenericOutput<TrainingOutput>>
+    public interface IFindTraining : IRequestHandler<FindTrainingInput, GenericOutput<TrainingOutput>>
     {
 
     }
